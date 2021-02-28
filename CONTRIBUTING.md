@@ -11,13 +11,15 @@ The following is a set of guidelines for contributing to React-Templates and its
 - [Code Of Conduct](#code-of-conduct)
 - [I have a Question - OR - I need Help](#i-have-a-question---or---i-need-help)
 - [What should I know before I get started?](#what-should-i-know-before-i-get-started?)
-- [What does this project do and why is it useful](#what-does-this-project-do-and-why-is-it-useful)
+- [What does this project do and why is it useful ?](#what-does-this-project-do-and-why-is-it-useful)
 - [How do I get started ?](#how-do-i-get-started)
 - [How Can I Contribute?](#how-can-i-contribute)
   - [To the current repos](#to-the-current-repos)
   - [Create my own repo](#create-my-own-repo)
 - [Styleguides](#styleguides)
-- [Additional Notes](#additional-notes)
+  - [Git commit messages](#how-to-commit)
+  - [Languages and Frameworks styleguide](#languages-and-frameworks-styleguide)
+- [Attribution](#attribution)
 
 ## Code Of Conduct
 
@@ -63,7 +65,7 @@ Although the procedure is common, as mentioned below :
 
 - Click on the template name you want to use. You will be redirected to the template github repo.
 - Checkout to `main` branch and click on **Code** button or **Use this template**  
-  (Follow methods according to the button you clicked on ):
+  (Follow below methods according to the button you clicked on ):
 
   **1**. If you clicked on **Use this template** (Preferred) -
 
@@ -74,7 +76,7 @@ Although the procedure is common, as mentioned below :
 
   **2**. If you clicked on **Code**
 
-  - select your preferred method (https, ssh or github cli) and click on copy icon button
+  - Select your preferred method (https, ssh or github cli) and click on copy icon button
   - Open your favored terminal (or integrated terminal in VS Code) and type `git clone [repo-link]`, replace _[repo-link]_ with the copied url and press Enter
   - The template will be cloned to your local machine
   - Now from root, enter `yarn install-all` or `npm install-all`
@@ -101,7 +103,7 @@ Follow the below guidelines to contribute to this project -
 
 ### _To the current repos_ -
 
-> Note - For contributing to current templates, create issues and pull requests in the respective templates and _not in react-templates_, only changes to .md files and .gitmodules are to be made in this repo.
+> Note - For contributing to current templates, create issues and pull requests in the respective templates and _not in this repo (react-templates)_, only changes to .md files and .gitmodules are to be made in this repo.
 
 - **Create an issue** : First step to contribute to the repository is to create the right issue. Add the right labels to your issue.
   [How to create a good issue ?](https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f)
@@ -111,7 +113,7 @@ Follow the below guidelines to contribute to this project -
 
   ## How to Branch
 
-  - After you clone your repo on you local machine, checkout to **dev** branch and merge **main** to it with  
+  - After you clone your repo on your local machine, checkout to **dev** branch and merge **main** to it with  
      `git merge main`
   - After successful merge, create and checkout to new branch using  
     `git checkout -b [branch-name]`
@@ -143,13 +145,14 @@ If the templates present in this repo do not cover the technology you wish to us
 - **Create an issue** : First step to contribute to the repository is to create the right issue. Add the right labels to your issue.  
   [How to create a good issue ?](https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f)
 
-  > Note - For a new template create an issue in this repository only. Name the issue as the technology being used. e.g. **react-redux-django**
+  > Note - For a new template create an issue in this repository only. Name the issue as the technologies being used to create the new template. e.g. **react-redux-django**
 
 - **Create your repo** :
 
-  - Create a repo in your own Github and select _use as a template_ option
+  - Create a repo in your own Github account and select _use as a template_ option
   - Make changes to your repo by following your own design pattern and commmit style.
-  - Once you are ready with the repo, clone this repo, create a new branch with the name  
+    > Note - Please ensure to use the best design patterns in the respected language as well as a good folder structure. Please justify in the directory READMEs why you chose a particular structure
+  - Once you are ready with the repo, clone this (react-templates) repo and create a new branch with the name  
     `template/[issue-name]` e.g. template/react-redux-django
   - Make changes in the `.gitmodules` file and run  
     `git submodule update --remote`  
@@ -160,9 +163,13 @@ If the templates present in this repo do not cover the technology you wish to us
 
   ### 🎉👍 Congratulations 🎉👍, your code would now serve as a strong foundation for others, upon which they can build their apps much easily and faster.
 
-## How To Commit
+  > Note - **Don't forget** to increment the repo version in package.json according to the changes you make, [know about SemVer](https://www.geeksforgeeks.org/introduction-semantic-versioning/)
 
-As already mentioned follow the commit rules in each individual repo. If not mentioned follow the pattern below
+## Styleguides
+
+### How To Commit
+
+As already mentioned before, please follow the commit rules described in each individual repo, if not mentioned follow the pattern below
 :
 
 - Start with what has the commit achieved i.e. fixed, refactored, styled etc. in uppercase letters inside square brackets. Some of them being (but not limited to) :
@@ -175,6 +182,43 @@ As already mentioned follow the commit rules in each individual repo. If not men
 - Follow this by a space and what or/and where the change happened  
   e.g.
   `[REFACTORED] App.jsx` OR `[UPDATED] test.js from class to hooks`
+
+### Languages and Frameworks styleguide
+
+Please follow the below mentioned styleguides according to the language/framework you are working on :
+
+1.  **React / Javascript**
+
+- Use hooks over classes
+- Use class based components only when utterly necessary. e.g. Errorboundary, pure components etc.
+- Type to create more stateless components
+- If using redux, make network calls only in redux with redux-thunk and not within the component or page
+- For file names, name components in PascalCase while page names in lowercase.
+- For function and variable names use camelCase
+  > Note - Try to follow [clean code](https://github.com/ryanmcdermott/clean-code-javascript) as much as possible
+- Try to make directory imports and exports.
+  e.g.  
+   USE  
+   `import { Login } from '../components'`  
+   INSTEAD OF  
+   `import Login from '../components/Login/Login'`
+- Place imports in the following order (Look in React pages/home of any repo for the same):
+
+  - Installed packages  
+    / Empty line /
+  - Local files, assets and modules  
+    / Empty line /
+  - Global store or Context (basically your data storage)  
+    / Empty line /
+  - Styles
+
+2. **CSS/SCSS**
+
+- _NO INLINE STYLING_
+- Use CSS-IN-JS(styled-components) or CSS Modules
+- Add global styles only in GlobalStyles.js and TypoGraphy.js
+- Keep declarative class names, e.g.  
+  `.loginButton` instead of `.button`
 
 ## Attribution
 
