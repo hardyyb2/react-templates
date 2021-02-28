@@ -203,7 +203,6 @@ Please follow the below mentioned styleguides according to the language/framewor
    INSTEAD OF  
    `import Login from '../components/Login/Login'`
 - Place imports in the following order (Look in React pages/home of any repo for the same):
-
   - Installed packages  
     / Empty line /
   - Local files, assets and modules  
