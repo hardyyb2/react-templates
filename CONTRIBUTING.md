@@ -4,8 +4,6 @@
 
 The following is a set of guidelines for contributing to React-Templates and its submodules, which are hosted on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
-<br />
-
 ### Table of Contents
 
 - [Code Of Conduct](#code-of-conduct)
@@ -24,8 +22,6 @@ The following is a set of guidelines for contributing to React-Templates and its
 ## Code Of Conduct
 
 This project and everyone participating in it is governed by the [react-templates Code of Conduct](https://github.com/hardyyb2/react-templates/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [hardikopensource@gmail.com](mailto:hardikopensource@gmail.com).
-
-<a  name="22"></a>
 
 ## I have a Question - OR - I need Help
 
