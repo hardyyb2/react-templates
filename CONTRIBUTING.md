@@ -154,7 +154,7 @@ If the templates present in this repo do not cover the technology you wish to us
 - **Create your repo** :
 
   - Create a repo in your own Github account and select _use as a template_ option
-  - Make changes to your repo by following your own design pattern and commit style.
+  - Make changes to your repo by following your own design pattern and commit style (don't forget to add **Contact Creator** option for a way to contact you).
     > Note - Please ensure to use the best design patterns in the respected language as well as a good folder structure.  
     >  Please justify in the directory READMEs why you chose a particular structure
   - Once you are ready with the repo, clone this (react-templates) repo and create a new branch with the name  
@@ -162,7 +162,7 @@ If the templates present in this repo do not cover the technology you wish to us
   - Make changes in the `.gitmodules` file and run  
     `git submodule update --init --recursive`  
      ([What are gitmodules ?](https://www.vogella.com/tutorials/GitSubmodules/article.html))
-  - Link to your template should appear as a submodule in this repo.
+  - Link to your template should appear as a submodule in this repo. (your repo always remains with you)
   - Now create a pull request to the `dev` branch of this repo and add the creator (or any other maintainer) for review.
   - Once the maintainer approves of the code, it will be merged to `dev` and then subsequently to the `main` branch
 
