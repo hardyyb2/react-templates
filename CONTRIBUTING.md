@@ -61,8 +61,7 @@ Although the procedure is common, as mentioned below :
 
 - Click on the template name you want to use. You will be redirected to the template github repo.
 - Checkout to `main` branch and click on **Code** button or **Use this template**  
-  ![actions](./assets/images/actions.png)
-  (Follow below methods according to the button you clicked on ):
+   <img src='./assets/images/actions.png' width="400" alt="Code Actions" />
 
   **1**. If you clicked on **Use this template** (Preferred) -
 
@@ -70,13 +69,15 @@ Although the procedure is common, as mentioned below :
   - Select option **Include all branches** if you want other branches to be a part of your own project too
   - Then click on **Create repository from template** button
   - Your repository will be built upon the template
-  - Click on Code and then clone the repo on your local machine
-    ![create repo from template](./assets/images/create-repo-from-template.png)
+  - Click on Code and then clone the repo on your local machine  
+    <img src='./assets/images/create-repo-from-template.png' width="400" alt="code repo from template" />
 
   **2**. If you clicked on **Code**
 
   - Select your preferred method (https, ssh or github cli) and click on copy icon button
-    ![clone options](./assets/images/clone-options.png)
+
+    <img src='./assets/images/clone-options.png' width="200" alt="clone options"/>
+
   - Open your favored terminal (or integrated terminal in VS Code) and type `git clone [repo-link]`, replace _[repo-link]_ with the copied url and press Enter
   - The template will be cloned to your local machine
   - Now from root, enter `yarn install-all` or `npm install-all`
