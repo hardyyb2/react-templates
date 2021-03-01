@@ -4,8 +4,6 @@
 
 The following is a set of guidelines for contributing to React-Templates and its submodules, which are hosted on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
-<br />
-
 ### Table of Contents
 
 - [Code Of Conduct](#code-of-conduct)
@@ -24,8 +22,6 @@ The following is a set of guidelines for contributing to React-Templates and its
 ## Code Of Conduct
 
 This project and everyone participating in it is governed by the [react-templates Code of Conduct](https://github.com/hardyyb2/react-templates/blob/main/CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to [hardikopensource@gmail.com](mailto:hardikopensource@gmail.com).
-
-<a  name="22"></a>
 
 ## I have a Question - OR - I need Help
 
@@ -60,31 +56,35 @@ This project and everyone participating in it is governed by the [react-template
 
 ## How do I get started ?
 
-Steps to start with the templates have been mentioned in each project's individual README.
+Steps to start with the templates have been mentioned in each project's individual README.  
 Although the procedure is common, as mentioned below :
 
 - Click on the template name you want to use. You will be redirected to the template github repo.
 - Checkout to `main` branch and click on **Code** button or **Use this template**  
+  ![actions](./assets/images/actions.png)
   (Follow below methods according to the button you clicked on ):
 
   **1**. If you clicked on **Use this template** (Preferred) -
 
   - Enter the details as you would while creating a repo
+  - Select option **Include all branches** if you want other branches to be a part of your own project too
   - Then click on **Create repository from template** button
   - Your repository will be built upon the template
   - Click on Code and then clone the repo on your local machine
+    ![create repo from template](./assets/images/create-repo-from-template.png)
 
   **2**. If you clicked on **Code**
 
   - Select your preferred method (https, ssh or github cli) and click on copy icon button
+    ![clone options](./assets/images/clone-options.png)
   - Open your favored terminal (or integrated terminal in VS Code) and type `git clone [repo-link]`, replace _[repo-link]_ with the copied url and press Enter
   - The template will be cloned to your local machine
   - Now from root, enter `yarn install-all` or `npm install-all`
     > Note - If using npm, remove **yarn.lock** from the directories
   - Wait for some time while the dependencies download, and then enter :
 
-    - `yarn start` or `npm start` to run in development mode (_hot reload only in client_)
-    - `yarn dev` or `npm run dev` to run in developement mode (_hot reload in both client and server_)
+    - `yarn start` or `npm start` to run in development mode (**_hot reload only in client_**)
+    - `yarn dev` or `npm run dev` to run in developement mode (**_hot reload in both client and server_**)
 
   - Change remote repo
     - Check current remote with  
@@ -98,14 +98,14 @@ Although the procedure is common, as mentioned below :
 
 ## How Can I Contribute ?
 
-We are really glad that you want to contribute to the repository. Contributing to this repository not only works for you, but helps many others who are working on the same repo too, each and every contribution matters.  
+We are really glad that you want to contribute to the repository. Contributing to this repository not only works for you, but helps many others who are working on the same repo too. Each and every contribution matters.  
 Follow the below guidelines to contribute to this project -
 
 ### _To the current repos_ -
 
-> Note - For contributing to current templates, create issues and pull requests in the respective templates and _not in this repo (react-templates)_, only changes to .md files and .gitmodules are to be made in this repo.
+> Note - For contributing to current templates, create issues and pull requests in the respective templates and _not in this repo (react-templates)_, only changes to assets, .md files and .gitmodules are to be made in this repo.
 
-- **Create an issue** : First step to contribute to the repository is to create the right issue. Add the right labels to your issue.
+- **Create an issue** : First step to contribute to the repository is to create the right issue. Add the right labels to your issue.  
   [How to create a good issue ?](https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f)
 
 - **Add your code** : See the article on the following link to see how you can add your changes to the repo, but check [here](#how-to-branch) to see how to create branches .  
@@ -119,7 +119,7 @@ Follow the below guidelines to contribute to this project -
     `git checkout -b [branch-name]`
   - The branch names should follow the patterns mentioned below :
 
-    - Branch names should begin with what type of issue they solve. Choose from one of the following :
+    - Branch names should begin with what type of issue they solve. Choose strictly from one of the following :
       1. **feature** - If it is a new feature
       2. **bugfix** - If it fixes a bug (breaking or non-breaking)
       3. **enhancement** - Any improvement to current repo (only code)
@@ -140,24 +140,25 @@ Follow the below guidelines to contribute to this project -
 
 ### _Create my own repo_
 
-If the templates present in this repo do not cover the technology you wish to use (like Django or Golang), don't worry, you can create your own template and add it to this repo. Follow the below steps for the same :
+If the templates present in this repo do not cover the technology you wish to use (like React Native, Django or Golang), don't worry, you can create your own template and add it to this repo. Follow the below steps for the same :
 
 - **Create an issue** : First step to contribute to the repository is to create the right issue. Add the right labels to your issue.  
   [How to create a good issue ?](https://medium.com/nyc-planning-digital/writing-a-proper-github-issue-97427d62a20f)
 
-  > Note - For a new template create an issue in this repository only. Name the issue as the technologies being used to create the new template. e.g. **react-redux-django**
+  > Note - For a new template create an issue in this repository only. Name the issue (separated by hiphens) as the technologies being used to create the new template. e.g. **reactnative-firebase**
 
 - **Create your repo** :
 
   - Create a repo in your own Github account and select _use as a template_ option
-  - Make changes to your repo by following your own design pattern and commmit style.
-    > Note - Please ensure to use the best design patterns in the respected language as well as a good folder structure. Please justify in the directory READMEs why you chose a particular structure
+  - Make changes to your repo by following your own design pattern and commit style (don't forget to add **Contact Creator** option for a way to contact you).
+    > Note - Please ensure to use the best design patterns in the respected language as well as a good folder structure.  
+    >  Please justify in the directory READMEs why you chose a particular structure
   - Once you are ready with the repo, clone this (react-templates) repo and create a new branch with the name  
-    `template/[issue-name]` e.g. template/react-redux-django
+    `template/[issue-name]` e.g. template/reactnative-firebase
   - Make changes in the `.gitmodules` file and run  
-    `git submodule update --remote`  
+    `git submodule update --init --recursive`  
      ([What are gitmodules ?](https://www.vogella.com/tutorials/GitSubmodules/article.html))
-  - Link to your template should appear as a submodule in this repo.
+  - Link to your template should appear as a submodule in this repo. (your repo always remains with you)
   - Now create a pull request to the `dev` branch of this repo and add the creator (or any other maintainer) for review.
   - Once the maintainer approves of the code, it will be merged to `dev` and then subsequently to the `main` branch
 
@@ -191,7 +192,7 @@ Please follow the below mentioned styleguides according to the language/framewor
 
 - Use hooks over classes
 - Use class based components only when utterly necessary. e.g. Errorboundary, pure components etc.
-- Type to create more stateless components
+- Try to create more stateless components
 - If using redux, make network calls only in redux with redux-thunk and not within the component or page
 - For file names, name components in PascalCase while page names in lowercase.
 - For function and variable names use camelCase
