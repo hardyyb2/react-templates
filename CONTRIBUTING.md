@@ -156,7 +156,9 @@ If the templates present in this repo do not cover the technology you wish to us
     >  Please justify in the directory READMEs why you chose a particular structure
   - Once you are ready with the repo, clone this (react-templates) repo and create a new branch with the name  
     `template/[issue-name]` e.g. template/reactnative-firebase
-  - Make changes in the `.gitmodules` file and run  
+  - Run the following commands in order :  
+    `git submodule add -b main [URL to Git repo]`  
+    `git submodule init`  
     `git submodule update --init --recursive`  
      ([What are gitmodules ?](https://www.vogella.com/tutorials/GitSubmodules/article.html))
   - Link to your template should appear as a submodule in this repo. (your repo always remains with you)
