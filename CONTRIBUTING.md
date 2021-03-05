@@ -221,6 +221,6 @@ Please follow the below mentioned styleguides according to the language/framewor
 
 ## Attribution
 
-This Code of Conduct is adapted from the [Atom CONTRIBUTING.md][atom-contribution]
+This CONTRIBUTING.md is adapted from the [Atom CONTRIBUTING.md][atom-contribution]
 
 [atom-contribution]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
