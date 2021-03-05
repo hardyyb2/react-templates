@@ -8,10 +8,10 @@ The following is a set of guidelines for contributing to React-Templates and its
 
 - [Code Of Conduct](#code-of-conduct)
 - [I have a Question - OR - I need Help](#i-have-a-question---or---i-need-help)
-- [What should I know before I get started?](#what-should-i-know-before-i-get-started?)
-- [What does this project do and why is it useful ?](#what-does-this-project-do-and-why-is-it-useful)
-- [How do I get started ?](#how-do-i-get-started)
-- [How Can I Contribute?](#how-can-i-contribute)
+- [What should I know before I get started](#what-should-i-know-before-i-get-started)
+- [What does this project do and why is it useful](#what-does-this-project-do-and-why-is-it-useful)
+- [How do I get started](#how-do-i-get-started)
+- [How Can I Contribute](#how-can-i-contribute)
   - [To the current repos](#to-the-current-repos)
   - [Create my own repo](#create-my-own-repo)
 - [Styleguides](#styleguides)
@@ -31,7 +31,7 @@ This project and everyone participating in it is governed by the [react-template
   - [hardikopensource@gmail.com](mailto:hardikopensource@gmail.com)
   - [Hardik Badola (Linked In)](https://www.linkedin.com/in/hardik-badola-738341197/)
 
-## What should I know before I get started?
+## What should I know before I get started
 
 - The frontend templates have been bootstrapped with [create-react-app](https://create-react-app.dev/)
 - The project currently consists of the following major technologies (click and know more about them):
@@ -54,7 +54,7 @@ This project and everyone participating in it is governed by the [react-template
 - For projects involving Node and MongoDB, database connection along with server file have been setup.
 - A good directory and file structure (open to change) and naming conventions along with example files have been used to promote better design patterns, clean code and suitable heirarchy.
 
-## How do I get started ?
+## How do I get started
 
 Steps to start with the templates have been mentioned in each project's individual README.  
 Although the procedure is common, as mentioned below :
@@ -97,7 +97,7 @@ Although the procedure is common, as mentioned below :
     - Push to new origin with  
       `git push -u origin main`
 
-## How Can I Contribute ?
+## How Can I Contribute
 
 We are really glad that you want to contribute to the repository. Contributing to this repository not only works for you, but helps many others who are working on the same repo too. Each and every contribution matters.  
 Follow the below guidelines to contribute to this project -
@@ -139,7 +139,7 @@ Follow the below guidelines to contribute to this project -
   - Add the creator (or any other maintainer) for review.
   - Once the maintainer approves of the code, it will be merged to `dev` and then subsequently to the `main` branch
 
-### _Create my own repo_
+### _Create my own repo_ -
 
 If the templates present in this repo do not cover the technology you wish to use (like React Native, Django or Golang), don't worry, you can create your own template and add it to this repo. Follow the below steps for the same :
 
