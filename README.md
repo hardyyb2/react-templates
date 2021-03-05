@@ -3,6 +3,8 @@
 - This project consists of various templates which can be used to speed up the initial phase of setup and development.
 - Each of the template is well coded and well structured to uphold the standards of clean code and follow good design patterns.
 
+> NOTE - Please look into [CONTRIBUTING.md](https://github.com/hardyyb2/react-templates/blob/main/CONTRIBUTING.md) for detailed information related to this project
+
 ### Know more about the project :
 
 - [Getting started](https://github.com/hardyyb2/react-templates/blob/main/CONTRIBUTING.md#how-do-i-get-started)
