@@ -1,12 +1,16 @@
 [submodule "react-redux-firebase-javascript"]
 	path = react-redux-firebase-javascript
 	url = https://github.com/hardyyb2/react-redux-firebase-javascript.git
+	branch = main
 [submodule "react-redux-firebase-typescript"]
 	path = react-redux-firebase-typescript
 	url = https://github.com/hardyyb2/react-redux-firebase-typescript.git
+	branch = main
 [submodule "mern-typescript"]
 	path = mern-typescript
 	url = https://github.com/hardyyb2/mern-typescript.git
+	branch = main
 [submodule "mern-javascript"]
 	path = mern-javascript
 	url = https://github.com/hardyyb2/mern-javascript.git
+	branch = main
